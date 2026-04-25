@@ -5,71 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sip and Relax Cafe</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f5f2;
-      color: #333;
-    }
-    header {
-      background: #3e2723;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #5d4037;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f8f5f2; color: #333; }
+    header { background: #3e2723; color: white; padding: 20px; text-align: center; }
+    nav { background: #5d4037; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2em;
-      font-weight: bold;
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px; gap: 30px; flex-wrap: wrap;
+      background: #eee;
     }
-    .section {
-      padding: 40px;
-      text-align: center;
+    .hero-text { max-width: 400px; }
+    .hero-text h2 { font-size: 2.2em; margin-bottom: 10px; }
+    .hero-text p { font-size: 1.1em; }
+
+    .hero img {
+      width: 350px; max-width: 90%; border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
+    .section { padding: 40px; text-align: center; }
     .menu {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
     }
     .menu-item {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
+      background: white; padding: 15px; border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .menu-item img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    footer {
-      background: #3e2723;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+    .menu-item img { width: 100%; border-radius: 10px; }
+
+    .location a { color: #5d4037; text-decoration: none; font-weight: bold; }
+
+    footer { background: #3e2723; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Sip and Relax ☕</h1>
-  <p>Cafe & Fastfood Corner</p>
+  <h1>Sip & Relax ☕</h1>
+  <p>TEA . CHILL . REPEAT</p>
 </header>
 
 <nav>
@@ -78,22 +54,28 @@
   <a href="#contact">Contact</a>
 </nav>
 
+<!-- HERO SECTION WITH YOUR IMAGE -->
 <div class="hero">
-  Good Vibes & Great Food
+  <div class="hero-text">
+    <h2>Good Vibes & Great Food</h2>
+    <p>Welcome to Sip & Relax Cafe — your cozy spot to enjoy tea, snacks, and chill moments.</p>
+  </div>
+  <img src="/mnt/data/46d0540a-cdcb-400e-a5d6-936ecebbb783.jpeg" alt="Sip and Relax Cafe">
 </div>
 
+<!-- MENU -->
 <div class="section" id="menu">
   <h2>Our Menu</h2>
   <div class="menu">
     <div class="menu-item">
       <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
-      <h3>Coffee</h3>
-      <p>Fresh brewed coffee</p>
+      <h3>Coffee & Tea</h3>
+      <p>Fresh brewed drinks</p>
     </div>
     <div class="menu-item">
       <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d">
       <h3>Burger</h3>
-      <p>Juicy grilled burger</p>
+      <p>Juicy grilled burgers</p>
     </div>
     <div class="menu-item">
       <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624">
@@ -103,19 +85,28 @@
     <div class="menu-item">
       <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
       <h3>Snacks</h3>
-      <p>Quick bites & fries</p>
+      <p>Fries & quick bites</p>
     </div>
   </div>
 </div>
 
+<!-- CONTACT -->
 <div class="section" id="contact">
   <h2>Contact Us</h2>
-  <p>📍 Kathmandu, Nepal</p>
-  <p>📞 98XXXXXXXX</p>
+  <p>📞 9818328800</p>
+  <p>📞 9860484888</p>
+</div>
+
+<!-- LOCATION -->
+<div class="section location">
+  <h2>Visit Us</h2>
+  <p>📍 Chapagaun, Lalitpur</p>
+  <p>In front of Pangau Chaur</p>
+  <p><a href="https://maps.app.goo.gl/Ct6AVD1ThQ43pAmQ6" target="_blank">View on Google Maps</a></p>
 </div>
 
 <footer>
-  <p>© 2026 Sip and Relax Cafe</p>
+  <p>© 2026 Sip & Relax Cafe</p>
 </footer>
 
 </body>
